@@ -2,12 +2,23 @@
 """
 pascals tiangle
 """
-from math import factorial
+
+
+def factorial(n):
+    """
+    factorial: returns a factorial of n
+    args:
+        n: number
+    """
+    fac = 1
+    for i in range(1, n+1):
+        fac *= i
+    return fac
 
 
 def pascal_triangle(n):
     """
-    pascat_triangle: pascsl triangle
+    pascal_triangle: pascal triangle
     args:
         n: number of rows
     """
